@@ -1,0 +1,11 @@
+authtoken: 5Eh1c9rTGyFLv2fSLYhvQ_7DjFwK8CA1t6W1XFK4J7P
+tunnels:
+  hass:
+    proto: http
+    addr: 8123
+    hostname: hub-7.simplyhomeapp.com
+    inspect: false
+  ssh:
+    proto: tcp
+    addr: 22
+    hostname: hub-7.simplyhomeapp.com

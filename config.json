@@ -1,0 +1,11 @@
+{
+  "name": "SimplyHome Firefly Remote Access Module",
+  "version": "0.5",
+  "slug": "simplyhome_firefly_remote",
+  "description": "SimplyHome remote access plugin for Hass.io",
+  "startup": "before",
+  "boot": "auto",
+  "host_network": true,
+  "options": {},
+  "schema": {}
+}

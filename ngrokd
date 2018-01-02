@@ -1,0 +1,25 @@
+#!/bin/sh
+# /etc/init.d/ngrok
+#install with
+#chmod +x /etc/init.d/ngrok
+#update-rc.d ngrok defaults
+
+
+case "$1" in
+  start)
+    echo "Ngrok service is starting"
+    screen -d -m /root/ngrok start -all -config /root/data/.ngrok2/ngrok.yml
+    echo "Ngrok service was started"
+    ;;
+  stop)
+    echo "Ngrok is stopping"
+    killall ngrok
+    echo "Service ngrok was stopped"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/ngrokd {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
